@@ -1,0 +1,406 @@
+:root {
+  --teal: #5fd1c9;
+  --teal-dark: #3fb8af;
+  --dark: #1c1c1c;
+  --cream: #faf9f7;
+  --grey: #777;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+/* Keep content confined to a consistent, narrower column on all screen sizes
+   (matches the original design's content width instead of Bootstrap's
+   default container, which keeps growing wider on large screens) */
+.container {
+  max-width: 960px;
+}
+
+/* Navbar spans the full page width, with the logo and hamburger icon
+   pinned to the true left/right screen edges (not the narrower content column) */
+.navbar-wrap {
+  
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.logo-font {
+  font-family: 'Caveat', cursive;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Top bar */
+.top-bar {
+  background: #3b6df0;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+/* Navbar */
+.navbar .nav-link {
+  color: var(--dark);
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+/* Hamburger icon (decorative, non-functional) */
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--dark);
+  border-radius: 2px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+  overflow: hidden;
+}
+
+.hero-row {
+  min-height: 420px;
+}
+
+.hero-dog {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.hero-products {
+  align-items: flex-end;
+  overflow: hidden;
+  height: 420px;
+  padding-top: 1rem;
+}
+
+.hero-product-img {
+  height: 280px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: -10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.hero-text {
+  padding: 2rem 1.5rem;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.shop-now-link {
+  display: inline-block;
+  color: #1a1a1a;
+  background: #f7e017;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  letter-spacing: 1px;
+}
+
+.shop-now-link .arrow {
+  margin-left: 0.5rem;
+}
+
+/* Section headings */
+.section-heading {
+  font-family: 'Caveat', cursive;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+/* Feature items */
+.feature-item {
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.paw-icon {
+  font-size: 1.5rem;
+  background: #fdf0b8;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-item p {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: left;
+}
+
+/* Reward banner */
+.reward-banner {
+  background: linear-gradient(120deg, var(--teal), var(--teal-dark));
+  border-radius: 14px;
+  padding: 2.5rem 2rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.reward-text p {
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.reward-text h2 {
+  font-weight: 800;
+  font-size: 2.2rem;
+  line-height: 1.1;
+}
+
+.arrow-lg {
+  font-size: 1.8rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.paw-outline {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.reward-dog {
+  height: 220px;
+  width: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid rgba(255,255,255,0.4);
+}
+
+/* Carousels */
+.new-launch-carousel {
+  max-width: 420px;
+  position: relative;
+}
+
+.new-launch-carousel .carousel-item img {
+  border-radius: 10px;
+  max-height: 480px;
+  width: auto;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon-custom,
+.carousel-control-next-icon-custom {
+  font-size: 2.5rem;
+  color: var(--dark);
+  background: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Category rows */
+.category-row h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.category-row p {
+  color: #666;
+  font-size: 0.9rem;
+  max-width: 480px;
+}
+
+.treats-text {
+  margin-left: auto;
+}
+
+.treats-text p {
+  margin-left: auto;
+}
+
+.category-img {
+  display: block;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Newsletter */
+.newsletter {
+  background: var(--cream);
+}
+
+/* Swap the usual heading/body font treatment: title takes the small
+   italic style, subtext takes the big script style — sizes unchanged */
+.newsletter .section-heading {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #666;
+}
+
+.newsletter p { font-family: 'Poppins', sans-serif; font-style: italic; font-weight: 100; color: var(--grey); font-size: 1rem; }
+
+/* Quick Contact: same swapped font treatment as Newsletter */
+#contact .section-heading {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #666;
+}
+
+#contact p { font-family: 'Poppins', sans-serif; font-style: italic; font-weight: 100; color: var(--grey); font-size: 1rem; }
+
+.newsletter-form {
+  max-width: 1040px;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+
+.newsletter-form input {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1.2rem;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.newsletter-form button {
+  border-radius: 4px;
+  padding: 0.6rem 1.6rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+  .newsletter-form {
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+
+  .newsletter-form input {
+    flex: 1 1 100%;
+    margin-right: 0 !important;
+    margin-bottom: 0.75rem;
+  }
+
+  .newsletter-form button {
+    flex: 1 1 100%;
+  }
+}
+
+.newsletter-btn {
+  background: #3b6df0;
+  color: #fff;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.newsletter-btn:hover {
+  background: #2f57c9;
+  color: #fff;
+}
+
+/* Contact */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 0.4rem;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background: #b8b8b8;
+  color: #fff;
+}
+
+.payment-icons span {
+  margin: 0 0.3rem;
+  font-size: 1.3rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .hero-row {
+    min-height: auto;
+  }
+  .hero-dog {
+    height: 260px;
+  }
+  .hero-products {
+    height: 260px;
+  }
+  .hero-product-img {
+    height: 180px;
+  }
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-products {
+    height: 200px;
+    padding-top: 0;
+  }
+  .hero-product-img {
+    height: 130px;
+  }
+  .hero-text {
+    padding: 1.5rem 1rem;
+  }
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+  .reward-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .reward-text {
+    margin: 1rem 0;
+  }
+  .section-heading {
+    font-size: 2rem;
+  }
+}
